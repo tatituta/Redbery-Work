@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questionnaire</title>
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <form id="wrapper" method="post">
+    <div class="slides">
+        <input type="radio" name="radio-btn" id="radio1">
+        <input type="radio" name="radio-btn" id="radio2">
+        <input type="radio" name="radio-btn" id="radio3">
+        <input type="radio" name="radio-btn" id="radio4">
+        <input type="radio" name="radio-btn" id="radio5">
+      <div class="slide one active">
+        <div class="content">
+        <div class="header">
+          <h1>Hey, Rocketeer, what are your coordinates?</h1>
+          <div class="frm"  id="form">
+            <input type="text" id="first_name" minlength="2" name="fname" placeholder="First Name">
+            <input type="text" id="last_name" minlength="2" name="lname" placeholder="Last Name">
+            <input type="email" id="email"  pattern=".+@gmail.com"name="email" placeholder="E mail">
+            <input type="text" id="phone" name="tel" placeholder="+995 5_ _ _ _">  
+          </div>
+        </div>
+        <div class="header2">
+          <h1>Redberry Origins</h1>
+          <p>You watch “What? Where? When?” Yeah. Our founders used to play it. That’s where they got a question about a famous American author and screenwriter Ray Bradbury. Albeit, our CEO Gaga Darsalia forgot the exact name and he answered Ray Redberry. And at that moment, a name for a yet to be born company was inspired - Redberry 😇</p>
+        </div>
+      </div>
+    </div>
+      <div class="slide two">
+        <div class="content">
+        <div class="header3">
+          <h1>Tell us about your skills</h1>
+        <div class="select-style">
+          <select name="skills" id="skills" form="skills" >
+            <option id="skll">Skills</option>
+            <option class="One" value=""></option>
+            <option class="Two" value=""></option>
+            <option class="Three"value=""></option>
+            <option class="Four" value=""></option>
+            <option class="Five" value=""></option>
+            <option class="Six" value=""></option>
+            <option class="Seven" value=""></option>
+            <option class="Eight" value=""></option>
+          </select>
+        </div>
+        <div class="form2" id="form" >
+          <input type="text" id="experience" name="experience" placeholder="Experience Duration in Years">
+        </div>
+        <button type="button" class="butt">Add Programming Language</button>
+        <div class="result"></div>
+       </div>
+        <div class="header4">
+          <h1>A bit about our battles</h1>
+          <p>As we said, Redberry has been on the field for quite some time now, and we have touched and embraced a variety of programming languages, technologies, philosophies, and frameworks. We are battle-tested in PHP Laravel Stack with Vue.js, refined in React, and allies with Serverside technologies like Docker and Kubernetes, and now we have set foot in the web3 industry.</p>
+        </div>
+      </div>
+    </div>
+      <div class="slide three">
+        <div class="content">
+        <div class="header5">
+          <h1>Covid Stuff</h1>
+        <div  class="form3" id="form" >
+          <p>How would you prefer to work?</p>
+        <div class="first">
+          <input type="radio" id="from_office" name="work" value="From Same Office">
+          <label class="from_office" for="office">From Same Office</label><br>
+        </div>
+        <div class="first">
+            <input type="radio" id="from_home" name="work" value="From Home">
+            <label class="from_home" for="home">From Home</label><br>
+        </div>
+        <div class="first">
+            <input type="radio" id="hybrid" name="work" value="Hybrid">
+            <label class="hybrid" for="hybrid">Hybrid</label>
+        </div>
+      </div>
+        <div  class="form4" id="form" >
+          <p>Did you contact covid 19? :(</p>
+          <div class="first">
+          <input type="radio" id="positive" name="covid" value="Yes">
+            <label class="positive" for="positive">Yes</label><br>
+        </div>
+        <div class="first">
+            <input type="radio" id="negative" name="covid" value="No">
+            <label class="negative" for="home">No</label><br>
+        </div>
+      </div>
+        <div class="form5" id="form" >
+          <p>When?</p>
+          <input type="date" id="date" name="date"  value="Date">
+        </div>
+        <div class="form6" id="form" >
+          <p>Have you been vaccinated?</p>
+          <div class="first">
+          <input type="radio" id="pos" name="covid2" value="Yes">
+            <label class="pos" for="pos">Yes</label><br>
+        </div>
+        <div class="first">
+            <input type="radio" id="neg" name="covid2" value="No">
+            <label class="neg" for="home">No</label><br>
+        </div>
+      </div>
+        <div  class="form6" id="form" >
+          <p>When did you get your last covid vaccine?</p>
+          <input type="date" id="date2" name="date"  value="Date">
+        </div>
+      </div>
+      <div class="header6">
+          <h1>Redberry Covid Policies</h1>
+          <p>We were soo much fun before the pandemic started! Parties almost every weekend and lavish employee birthday celebrations! Unfortunately, covid ruined that fun like it did almost everything else in the world. But we try our best to zhuzh it up a bit. For example, we host biweekly Devtalks where our senior and lead developers talk about topics they are passionate about. Previous topics have included Web3, NFT, Laravel 9, Kubernetes, etc. We hold these talks in the office but you can join our Zoom broadcast as well. Feel free to join either as an attendee or a speaker!</p>
+      </div>
+      </div>
+      </div>
+      <div class="slide four">
+        <div class="content">
+          <div class="header7">
+            <h1>What about you?</h1>
+            <div class="form7" id="form" >
+            <p>Would you attend Devtalks and maybe also organize your own?</p>
+            <div class="first">
+              <input type="radio" id="po" name="talk" value="Yes">
+                <label class="po" for="po">Yes</label><br>
+            </div>
+            <div class="first">
+                <input type="radio" id="ne" name="talk" value="No">
+                <label class="ne" for="home">No</label><br>
+            </div>
+          </div>
+            <div  class="txt" id="form">
+            <p>What would you speak about at Devtalk?</p>
+            <textarea name="text" id="txt" cols="30" rows="10" placeholder="I would.."></textarea>
+            <p>Tell us something special</p>
+            <textarea name="txt2" id="txt2" cols="30" rows="10" placeholder="I.."></textarea>
+            </div>
+          </div>
+          <div class="header8">
+            <h1>Redberrian Insights</h1>
+            <p>We were soo much fun before the pandemic started! Parties almost every weekend and lavish employee birthday celebrations! Unfortunately, covid ruined that fun like it did almost everything else in the world. But we try our best to zhuzh it up a bit. For example, we host biweekly Devtalks where our senior and lead developers talk about topics they are passionate about. Previous topics have included Web3, NFT, Laravel 9, Kubernetes, etc. We hold these talks in the office but you can join our Zoom broadcast as well. Feel free to join either as an attendee or a speaker!</p>
+          </div>
+      </div>
+      </div>
+      <div class="slide five">
+        <div class="content">
+          <div   id="form">
+          <button type="submit" id="submit-btn" value="submit">
+             <!-- <a href="index3.html">Submit</a>  -->
+          </button>
+          <div class="back">
+            <a src="index2/html">go back</a>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+    <div class="navigation-manual">
+        <label for="radio1" class="manual-btn"></label>
+        <label for="radio2" class="manual-btn"></label>
+        <label for="radio3" class="manual-btn"></label>
+        <label for="radio4" class="manual-btn"></label>
+        <label for="radio5" class="manual-btn"></label>
+    </div>
+  
+  </form>
+
+    <script>
+      $.getJSON("https://bootcamp-2022.devtest.ge/api/skills",
+      function(data){
+        var skill1 = data[0].title;
+        var skill2 = data[1].title;
+        var skill3 = data[2].title;
+        var skill4 = data[3].title;
+        var skill5 = data[4].title;
+        var skill6 = data[5].title;
+        var skill7 = data[6].title;
+        var skill8 = data[7].title;
+        $(".One").append(skill1);
+        $(".Two").append(skill2);
+        $(".Three").append(skill3);
+        $(".Four").append(skill4);
+        $(".Five").append(skill5);
+        $(".Six").append(skill6);
+        $(".Seven").append(skill7);
+        $(".Eight").append(skill8);
+      });
+ 
+
+  jQuery($=>{
+
+  let $type = $('#skills');
+  let $exp = $('#experience');
+  $(".butt").click(function() {
+  $(".result").append(`<div class="dv"><div class="nice">${$type.find('option:selected').text()}</div>${$exp.text()}${$type.val()}<div class="nic">Years of experience: ${$exp.val()}</div><img class="remove" src="pics/remove.png"></div>`);
+  $('.remove').bind('click', function ()
+    {
+      $('.dv').remove();
+      return false;
+    });
+  });
+  
+});
+
+// var $form = $('#wrapper');
+
+//   $form.submit(function(e) {
+//   //auto submition 
+//   e.preventDefault()
+
+//   var first_name = document.getElementById('fname').value;
+//   var last_name = document.getElementById('lname').value;
+//   var email = document.getElementById('email').value;
+//   var phone = document.getElementById('tel').value;
+//   var skills = document.querySelector('.dv').value;
+//   conosle.log(skills)
+
+//   var had_covid = document.querySelector('input[name="covid"]:checked').value;
+//   var work_preference = document.querySelector('input[name="work"]:checked').value;
+//   var had_covid_at = document.getElementById('date').value;
+//   var vaccinated = document.querySelector('input[name="covid2"]:checked').value;
+//   var vaccinated_at = document.getElementById('date2').value;
+//   var well_organize_devtalk = document.querySelector('input[name="talk"]:checked').value;
+//   var devtalk_topic = document.querySelector('#txt').value;
+//   var something_special =  document.querySelector('#txt2').value;
+
+//   fetch("https://bootcamp-2022.devtest.ge/api/application",
+//   {
+//     method:'POST',
+//        body:JSON.stringify({
+//        token:"48c471ba-b6e5-4ba2-87bf-5abf75593665",
+//        first_name: first_name,
+//        last_name:last_name,
+//        email:email,
+//        skills:skills,
+//        had_covid:had_covid,
+//        work_preference:work_preference,
+//        had_covid_at:had_covid_at,
+//        vaccinated:vaccinated,
+//        vaccinated_at:vaccinated_at,
+//        well_organize_devtalk:well_organize_devtalk,
+//        devtalk_topic:devtalk_topic,
+//        something_special:something_special
+//      }), 
+//      headers:{
+//        "accept": "application/json",
+//        "Content-Type": "application/json; charset=UTF-8"
+//      }
+//   })
+//   .then(function(response){
+//     return response.json()
+//   })
+//   .then(function(data){
+//     console.log(data)
+//   })
+// })
+
+const url = 'https://bootcamp-2022.devtest.ge/api/application';
+const formEl = document.querySelector('#wrapper');
+formEl.addEventListener("sumbit", async (e)=>{
+  e.preventDefault();
+  const fromData = new formData(formEl);
+  const formDataSerialized = object.fromEntries(formData);
+  try{
+    const response = await fetch(url,{
+      method:'POST',
+      body:JSON.stringify(formDataSerialized),
+      headers:{
+        token:'48c471ba-b6e5-4ba2-87bf-5abf75593665',
+        'accept': 'application/json',
+        'Content-Type': 'application/json; charset=UTF-8'
+      }
+    });
+    const json = await response.json();
+    console.log(json);
+  } catch(e) {
+     console.error(e);
+     alert("there was an error")
+  }
+   
+});
+
+
+
+
+
+</script>
+  </body>
+</html>
